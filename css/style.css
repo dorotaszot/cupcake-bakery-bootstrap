@@ -81,5 +81,46 @@ border: none;
 #main-footer p {
   margin: 0;
   font-size: 1.2rem;
+}
 
+/* Cupcakes */
+/* #cupcakes {
+  justify-content: center;
+} */
+
+/* Cupcakes section, photos */
+.mdb-lightbox {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.img-fluid {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding: 0;
+}
+
+.img-overlay h2 {
+  position: absolute;
+  background-color: rgba(230,67,152, 0.6);
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  text-align: center;
+  color: #fff;
+  transition: all .4s;
+  font-weight: 100;
+  padding-left: 0;
+  padding-right: ;
+}
+
+.img-overlay h2:hover {
+  opacity: 1;
 }
