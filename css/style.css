@@ -49,6 +49,13 @@ body {
   object-fit: cover;
 }
 
+.ingredient-wrapper {
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+}
+
 .ingredient {
   height: 200px;
   width: 80%;
@@ -57,17 +64,10 @@ body {
   padding: 20px;
 }
 
-.card {
-  text-align: center;
-align-items: center;
-padding: 10px;
-border: none;
-
-}
-
 #ingredients {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .btn-primary {
@@ -154,7 +154,7 @@ border: none;
 }
 
 .img-person-wrapper img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .sue {
@@ -165,21 +165,47 @@ border: none;
 
 /* Contact Section */
 
+.contact-form-wrapper {
+  background: url('../img/wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+
+  /* width: 100%; */
+  /* position: relative; */
+  
+}
+
+.contact-form {
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  right: 0;
+  margin-right: 200px;
+ 
+}
 
 .contact-form input,
 .contact-form textarea {
   display: block;
   width: 100%;
-  padding:10px;
-  margin: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   outline: none;
-  border: #5ab9ea solid 1px;
+  border: none;
   border-radius: 5px;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: #e64398 solid 1px;
+  outline: none;
   border: transparent;
 }
 
@@ -191,20 +217,23 @@ border: none;
   border-radius: 5px;
 }
 
-.contact-img {
-  height: 500px;
-  width: 400px;
-  object-fit: cover;
+.contact-form input.submit:hover {
+  background-color: #e757a2;
 }
 
+.contact-form ::placeholder {
+  color: #e64398;
+}
+
+/* contact-icons section */
 .contact-icons {
+  width: 100%;
   background-color: #e64398;
   padding: 20px;
   display: flex;
-  /* flex-direction: column; */
-
+  margin-right: 0;
+  margin-left: 0;
 }
-
 
 .contact-icons{
   color: #fff;
@@ -220,18 +249,71 @@ border: none;
   flex-wrap: wrap;
 }
 
-@media(max-width: 448px) {
-  .people-wrapper img,
-  .img-person-wrapper {
-
-    height: 300px;
-    width: 100%;
+@media(max-width: 992px) {
+  .contact-form {
+    width: 45%;
+    margin-right: 50px;
   }
+  /* .contact-form-wrapper {
+    height: 80vh;
+  } */
 }
 
-@media(max-width: 780px) {
+@media(max-width: 862px) {
   .contact-icons {
     display: block;
     width: 100%
   }
 }
+
+@media(max-width: 576px) {
+  .contact-form {
+    width: 100%;
+    margin-right: 15px;
+    padding-left: 25px;
+
+    /* left:0; */
+    /* margin: 0 auto; */
+    /* right: auto;
+    margin-right: 15px;
+    margin-left: 50px;   */
+  }
+}
+
+@media(max-width: 554px) {
+  #main-nav .container {
+    justify-content: flex-end;
+
+  }
+  #main-nav .nav {
+    flex-direction: column;
+    flex-basis: 30%;
+    right:0;
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  #main-nav .nav img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    /* display: none; */
+  }
+}
+
+@media(max-width: 448px) {
+  .people-wrapper img,
+  .img-person-wrapper {
+    height: 300px;
+    width: 100%;
+  }
+
+  .contact-form-wrapper {
+    height: 80vh;
+  }
+
+  .contact-form {
+  }
+}
+
