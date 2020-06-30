@@ -5,6 +5,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Utilities */
 .margin-y {
   margin-bottom: 50px;
 }
@@ -87,13 +88,10 @@ body {
   font-size: 1.2rem;
 }
 
-/* Cupcakes section, photos */
-
-
+/* Cupcakes section - photos */
 .gallery-img-wrapper {
   padding:0;
   position: relative;
- 
 }
 
 .gallery-img {
@@ -129,12 +127,9 @@ body {
   font-weight: 100;
 }
 
-
 /* Meet Us section */
- 
 .people-wrapper {
   margin: 40px auto;
-
 }
 
 .img-person-wrapper {
@@ -142,8 +137,6 @@ body {
   height: 400px;
   width: 400px;
   margin: auto;
-  margin-bottom: 20px;
-
 }
 
 .people-wrapper img {
@@ -162,10 +155,12 @@ body {
 }
 
 /* Cafe */
-
 .cafe {
- 
+  margin: 50px auto;
+}
 
+.cafe div {
+ padding: 0;
 }
 
 .cafe-img {
@@ -177,7 +172,6 @@ body {
 }
 
 /* Contact Section */
-
 .contact-form-wrapper {
   background: url('../img/wallpaper.jpg');
   background-repeat: no-repeat;
@@ -186,10 +180,6 @@ body {
   height: 80vh;
   display: flex;
   align-items: center;
-
-  /* width: 100%; */
-  /* position: relative; */
-  
 }
 
 .contact-form {
@@ -201,7 +191,6 @@ body {
   width: 30%;
   right: 0;
   margin-right: 200px;
- 
 }
 
 .contact-form input,
@@ -238,7 +227,7 @@ body {
   color: #e64398;
 }
 
-/* contact-icons section */
+/* Contact-icons section */
 .contact-icons {
   width: 100%;
   background-color: #e64398;
@@ -262,8 +251,6 @@ body {
   flex-wrap: wrap;
 }
 
-
-
 /* RWD */
 
 @media(max-width: 992px) {
@@ -285,12 +272,6 @@ body {
     width: 100%;
     margin-right: 15px;
     padding-left: 25px;
-
-    /* left:0; */
-    /* margin: 0 auto; */
-    /* right: auto;
-    margin-right: 15px;
-    margin-left: 50px;   */
   }
 }
 
@@ -306,7 +287,6 @@ body {
     text-align: center;
     margin-right: 20px;
   }
-
   #main-nav .nav img {
     position: absolute;
     top: 0;
@@ -322,12 +302,8 @@ body {
     height: 300px;
     width: 100%;
   }
-
   .contact-form-wrapper {
     height: 80vh;
-  }
-
-  .contact-form {
   }
 }
 
